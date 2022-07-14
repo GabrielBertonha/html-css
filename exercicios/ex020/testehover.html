@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando as ID e CLASS</title>
+
+    <!-- ESSE TESTE NAO ESTA NA AULA -->
+    <style>
+        div:hover {
+            color: green;
+        }
+
+        div > p {
+            display: none;
+            color: red;
+            /* esse div quer dizer para esconder o paragrafo dentro do div */
+        }
+
+        div:hover > p {
+            font-size: 1em;
+            color: aquamarine;
+            text-align: left;
+        
+            display: block;
+            /* esse div quer dizer que quando o mouse passar em cima do div, vai mostrar o paragrafo oculto */
+        }
+        div#div {
+            color: blueviolet;
+            text-align: center;
+            font-size: 1em;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>testes de ids e class</h1>
+    <div id="div"> esse é o exemplo passe o mouse aqui
+        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, impedit qui iste nulla, mollitia cum aspernatur neque minus minima repudiandae, vitae consectetur nihil nesciunt doloremque. Placeat modi odit consequuntur! Quam.</p>
+    </div>
+    <h2>testes</h2>
+    <div> esse div nao esta com a ID</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aspernatur veniam dolorum tempore possimus accusantium provident accusamus a et culpa quibusdam blanditiis sapiente repellat, est, natus voluptates ut in necessitatibus?</p>
+    
+</body>
+</html>
